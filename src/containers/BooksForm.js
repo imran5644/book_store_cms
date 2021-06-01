@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import React, { useState } from 'react';
+import { createBook } from '../actions';
 
 const CATEGORIES = [
   { key: 0, name: 'Action' },
@@ -14,7 +16,7 @@ const CATEGORIES = [
 const BooksForm = ({ create }) => {
   const [book, setBook] = useState({ title: '', category: '' });
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     if (e.target.id === 'inputTitle') {
       setBook({ ...book, title: e.target.value });
     } else {
@@ -56,4 +58,8 @@ BooksForm.propTypes = {
   create: PropTypes.func.isRequired,
 };
 
-export default BooksForm;
+const mapDispatchToProps = (dispatch) => ({
+  create: (book) => dispatch(createBook(book)),
+});
+
+export default connect(null, mapDispatchToProps)(BooksForm);
