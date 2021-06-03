@@ -25,7 +25,7 @@ const Book = ({ book, delete: handleRemoveBook }) => (
     </div>
     <div>
       <button type="button" onClick={() => handleRemoveBook(book)}>
-      Remove book&nbsp;
+        Remove book&nbsp;
         <i className="fa fa-trash" />
       </button>
     </div>

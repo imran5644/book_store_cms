@@ -8,7 +8,7 @@ import '../stylesheets/BooksForm.css';
 const BooksForm = ({ create }) => {
   const [book, setBook] = useState({ title: '', category: '' });
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     if (e.target.id === 'inputTitle') {
       setBook({ ...book, title: e.target.value, invalid: false });
     } else {
@@ -56,8 +56,8 @@ BooksForm.propTypes = {
   create: PropTypes.func.isRequired,
 };
 
-const mapDispatchToProps = dispatch => ({
-  create: book => dispatch(createBook(book)),
+const mapDispatchToProps = (dispatch) => ({
+  create: (book) => dispatch(createBook(book)),
 });
 
 export default connect(null, mapDispatchToProps)(BooksForm);

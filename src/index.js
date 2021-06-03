@@ -4,9 +4,9 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import './index.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import App from './components/App';
 import rootReducer from './reducers';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 
 const store = createStore(
