@@ -4,8 +4,10 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import './index.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import App from './components/App';
 import rootReducer from './reducers';
+import NavBar from './components/NavBar';
 
 const store = createStore(
   rootReducer,
@@ -13,7 +15,14 @@ const store = createStore(
 );
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <Router>
+      <NavBar />
+      <Switch>
+        <Route path="/" component={App} />
+        <Route path="/books" component={App} />
+        <Route path="/categories" component={App} />
+      </Switch>
+    </Router>
   </Provider>,
   document.getElementById('root'),
 );

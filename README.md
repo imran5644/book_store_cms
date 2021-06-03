@@ -8,7 +8,7 @@
 
 ## Live Link Demo
 
-[Live Link Demo](https://dazzling-torvalds-b59c74.netlify.app)
+[Live Link Demo](https://zen-babbage-08fb61.netlify.app/)
 
 ## Built With
 
