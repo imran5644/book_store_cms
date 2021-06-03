@@ -13,7 +13,7 @@ const NavBar = ({ handleChangeFilter: changeFilter, handleVisibility: changeVisi
   };
   return (
     <nav className="d-flex flex-column flex-md-row">
-    <div className="nav-links d-flex flex-column flex-md-row">
+      <div className="nav-links d-flex flex-column flex-md-row">
         <h1 className="title"><Link to="/">BookStore CMS</Link></h1>
         <h2 className="books"><Link to="/books">BOOKS</Link></h2>
         <h2 className="categories"><CategoryFilter handleFilter={handleFilter} /></h2>
