@@ -28,14 +28,14 @@
   color: #121212;
 }
 
-.book-category, 
-.percentage, 
+.book-category,
+.percentage,
 .completed {
   font-family: 'Montserrat', sans-serif;
 }
 
-.book-category, 
-.percentage, 
+.book-category,
+.percentage,
 .completed,
 .actions span,
 .actions a {
@@ -45,7 +45,7 @@
   letter-spacing: normal;
 }
 
-.book-title, 
+.book-title,
 .book-id,
 .actions span,
 .action a {
@@ -133,7 +133,7 @@ button {
   font-size: 14px;
   font-weight: 300;
   color: var(--cool-blue);
-  border-right: 1px solid rgb(197, 196, 196);
+  border-right: 1px solid #c4c4c4;
 }
 
 .actions a {
@@ -147,4 +147,16 @@ button {
 
 .actions span.last {
   border-right: 0;
+}
+
+.chapter {
+  margin-bottom: 130px;
+}
+
+.btn-update {
+  margin: 0;
+  background-color: var(--azure);
+  color: #c7c7c7;
+  height: 35px;
+  font-family: 'Montserrat', sans-serif;
 }
